@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мій особистий блог</title>
+    
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #4a90e2;
+    color: #000000;
+    padding: 10px;
+    text-align: left;
+    position: relative;
+}
+.p_color{
+color: #fff;
+}
+
+
+header h1 {
+    font-size: 24px;
+}
+
+header nav {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+}
+
+header nav a {
+    color: #000000;
+    margin-left: 15px;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.registration-form {
+    width: 320px;
+    background-color: #f1f1f1;
+    border: 1px solid #ccc;
+    
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.registration-form h2 {
+    background-color: #4a90e2;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    font-size: 18px;
+    margin: 0;
+}
+
+.registration-form form {
+    padding: 20px;
+}
+
+.registration-form label {
+    display: block;
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.registration-form input,
+.registration-form select {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.registration-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #ccc;
+    color: #333;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.registration-form button:hover {
+    background-color: #b3b3b3;
+}
+
+        /* Стиль кнопки-посилання */
+        .go-to-page {
+            display: inline-block;
+            width: 100%;
+            padding: 10px;
+            background-color: #4a90e2;
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            font-size: 16px;
+            border-radius: 4px;
+            margin-top: 15px;
+        }
+
+        .go-to-page:hover {
+            background-color: #3b78c3;
+        }
+        
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 25px;
+    font-size: 14px;
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Мій особистий блог</h1>
+        <p class="p_color">Зубченко Артем</p>
+        <nav>
+            <a href="#">Вхід</a>
+            <a href="#">Реєстрація</a>
+        </nav>
+    </header>
+    <main>
+        <div class="registration-form">
+            <h2>Реєстрація користувача</h2>
+            <form>
+                <label for="surname">Прізвище</label>
+
+                <input type="text" id="surname" name="surname" required>
+
+                <label for="name">Ім'я</label>
+
+                <input type="text" id="name" name="name" required>
+
+                <label for="username">Логін</label>
+
+                <input type="text" id="username" name="username" required>
+
+                <label for="group">Навчальна група</label>
+                <select id="group" name="group">
+                    <option value="101">101-пТК</option>
+                    <option value="201">201-пТК</option>
+                    <option value="301">301-пТК</option>
+                    <!-- Add more groups if necessary -->
+                </select>
+
+                <label for="password">Пароль</label>
+
+                <input type="password" id="password" name="password" required>
+
+                <label for="confirm-password">Підтвердження паролю</label>
+
+                <input type="password" id="confirm-password" name="confirm-password" required>
+
+                <button type="submit">Зареєструватись</button>
+            </form>
+            <a href="ZubchenkoLab10-1.html" class="go-to-page">Перейти на сторінку</a>
+            
+        </div>
+    </main>
+    <footer>
+        <p>© Всі права захищені.</p>
+    </footer>
+</body>
+</html>
